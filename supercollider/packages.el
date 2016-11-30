@@ -3,8 +3,8 @@
 (defun supercollider/init-sclang ()
   (use-package sclang
     :config
-    (setenv "PATH" (concat (getenv "PATH") ":/Applications/SuperCollider.app/Contents/Resources"))
-    (setq exec-path (append exec-path '("/Applications/SuperCollider.app/Contents/Resources" )))
+    (setenv "PATH" (concat (getenv "PATH") ":/Applications/SuperCollider/SuperCollider.app/Contents/MacOS"))
+    (setq exec-path (append exec-path '("/Applications/SuperCollider/SuperCollider.app/Contents/MacOS" )))
     ))
 
 (defun supercollider/post-init-sclang ()
