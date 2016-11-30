@@ -1,4 +1,4 @@
-supercollider spacemacs layer
+SuperCollider Spacemacs Layer
 =============================
 
 Layer for spacemacs to work with sclang and scsynth
@@ -12,3 +12,7 @@ Layer for spacemacs to work with sclang and scsynth
 * You should have `~/.emacs.d/private/spacemacs-layers/supercollider` now.
 * In case you have other private layers, be sure to move the `supercollider` folder into the proper folder.
 * Change the SuperCollider.app path in the `packages.el` file if you installed SuperCollider somewhere else
+
+# TODOs
+  * Fix emacs not creating a new open buffer/working space when sclang starts
+  * Fix buffers with .scd or in sclang-mode not connecting to the current sclang process
