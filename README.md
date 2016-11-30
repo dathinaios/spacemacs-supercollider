@@ -1,7 +1,7 @@
 SuperCollider Spacemacs Layer
 =============================
 
-Layer for spacemacs to work with sclang and scsynth
+SuperCollider layer for Spacemacs.
 
 # Downloads
 
@@ -20,6 +20,6 @@ The installation assumes that `SuperCollider.app` is in your `Applications` dire
 
 # TODO's
 
-  0. Fix buffers with .scd/.sc (sclang-mode) not connecting to the current sclang process
+  0. Fix buffers with `.scd` and `.sc` files (sclang-mode) not connecting to the current sclang process
   0. Map spacemacs style shortcuts under `<SPACE>m`
   0. Fix emacs not creating a new open buffer/working space when sclang starts
