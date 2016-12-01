@@ -17,9 +17,9 @@ Add supercollider to your layers in `.spacemacs`.
 
 The installation assumes that `SuperCollider.app` is in your `Applications` directory. Modify `packages.el` if you have `SuperCollider` in a different folder.
 
-Press `C-c` `C-o` to start `sclang`.
-`C-c` `C-p` `b` to start the server.
-Press `C-c` and wait to show a helm window with all the commands to explore.
+Press `C-c` `C-o` to start `sclang`, `C-c` `C-p` `b` to start the server. 
+
+Press `C-c` and wait to show a helm window with all the possible commands.
 
 # TODO's
 
