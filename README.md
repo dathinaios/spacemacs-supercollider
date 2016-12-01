@@ -1,12 +1,7 @@
 SuperCollider Spacemacs Layer
 =============================
 
-SuperCollider layer for Spacemacs.
-
-# Downloads
-
-* [SuperCollider](http://supercollider.github.io/download.html) (_current version 3.8_)
-* [Spacemacs](http://spacemacs.org/)
+[SuperCollider 3.8](http://supercollider.github.io/download.html) layer for [Spacemacs](http://spacemacs.org/).
 
 # Installation
 
@@ -14,12 +9,18 @@ Clone this repository in the `~/.emacs.d/private/` folder and rename the folder 
 
     git clone https://github.com/dathinaios/spacemacs-supercollider.git ~/.emacs.d/private/supercollider
 
+Link the `SC` classes to the extensions folder:
+
+    ln -s ~/.emacs.d/private/supercollider/sc ~/Library/Application\ Support/supercollider/extensions/emacs
+
 Add supercollider to your layers in `.spacemacs`.
 
 The installation assumes that `SuperCollider.app` is in your `Applications` directory. Modify `packages.el` if you have `SuperCollider` in a different folder.
 
+Press `C-c` `C-o` to start `sclang`.
+`C-c` `C-p` `b` to start the server.
+Press `C-c` and wait to show a helm window with all the commands to explore.
+
 # TODO's
 
-  0. Fix buffers with `.scd` and `.sc` files (sclang-mode) not connecting to the current sclang process
   0. Map spacemacs style shortcuts under `<SPACE>m`
-  0. Fix emacs not creating a new open buffer/working space when sclang starts
