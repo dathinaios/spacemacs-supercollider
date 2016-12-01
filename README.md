@@ -5,7 +5,7 @@ SuperCollider Spacemacs Layer
 
 # Installation
 
-Clone this repository in the `~/.emacs.d/private/` folder and rename the folder to supercollider:
+Clone this repository to the `~/.emacs.d/private/` folder and rename the folder to supercollider:
 
     git clone https://github.com/dathinaios/spacemacs-supercollider.git ~/.emacs.d/private/supercollider
 
