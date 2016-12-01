@@ -1,0 +1,9 @@
+includePaths:
+    - "~/Library/Application Support/SuperCollider/Extensions"
+    - /Library/Application Support/SuperCollider/Extensions
+    - /Applications/SuperCollider/SuperCollider.app/Contents/Resources/SCClassLibrary
+    - /Applications/SuperCollider.app/Contents/Resources/SCClassLibrary
+    - "~/.emacs.d/private/supercollider/sc"
+excludePaths:
+    []
+postInlineWarnings: false

@@ -5,6 +5,7 @@
     :config
     (setenv "PATH" (concat (getenv "PATH") ":/Applications/SuperCollider.app/Contents/MacOS"))
     (setq exec-path (append exec-path '("/Applications/SuperCollider.app/Contents/MacOS" )))
+    (setq sclang-library-configuration-file "~/.emacs.d/private/supercollider/emacs_config.yaml")
     ))
 
 (defun supercollider/post-init-sclang ()
