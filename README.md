@@ -9,11 +9,7 @@ Clone this repository to the `~/.emacs.d/private/` folder and rename the folder 
 
     git clone https://github.com/dathinaios/spacemacs-supercollider.git ~/.emacs.d/private/supercollider
 
-Link the `SC` classes to the extensions folder:
-
-    ln -s ~/.emacs.d/private/supercollider/sc ~/Library/Application\ Support/supercollider/extensions/emacs
-
-Add supercollider to your layers in `.spacemacs`.
+Add `supercollider` to your layers in `.spacemacs`.
 
 The installation assumes that `SuperCollider.app` is in your `Applications` directory. Modify `packages.el` if you have `SuperCollider` in a different folder.
 
