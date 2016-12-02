@@ -7,7 +7,6 @@
     (setenv "PATH" (concat (getenv "PATH") ":/Applications/SuperCollider.app/Contents/MacOS"))
     (setq exec-path (append exec-path '("/Applications/SuperCollider.app/Contents/MacOS" )))
     (setq sclang-library-configuration-file "~/.emacs.d/private/supercollider/emacs_config.yaml")
-    (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "TAB" 'sclang-complete-symbol)
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "RET" 'sclang-start)
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "<" 'sclang-clear-post-buffer)
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode ">" 'sclang-show-post-buffer)
@@ -46,5 +45,6 @@
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "srP" 'sclang-server-pause-recording)
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "srr" 'sclang-server-record)
     (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "srs" 'sclang-server-stop-recording)
+
     )))
 
