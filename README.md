@@ -15,12 +15,13 @@ The installation assumes that `SuperCollider.app` is in your `Applications` dire
 
 # Usage
 
-All the mappings are organised under `<SPACE>m` which mapped by default to `,` so  pressing any of the two will show a helm window with all the possible commands. Quick Start:
+All the mappings are organised under `<SPACE>m` which is mapped by default to `,` so  pressing any of the two will show a helm window with all the possible commands. 
 
-`,<ENTER>` to start the language.
-`,ss` to start the server.
+Quick Start:
 
-`,,` to evaluate line or selection.
+* `,<ENTER>` to start the language.
+* `,ss` to start the server.
+* `,,` to evaluate line or selection.
 
 ---
 ######<i>The emacs package for sclang is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
