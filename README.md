@@ -18,4 +18,4 @@ Press `C-c` `C-o` to start `sclang`, `C-c` `C-p` `b` to start the server.
 Press `C-c` and wait to show a helm window with all the possible commands.
 
 ---
-######<i>The emacs package for `sclang` is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
+######<i>The emacs package for sclang is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
