@@ -669,21 +669,34 @@ Returns the column to indent to."
   :group 'sclang-mode
   :type 'hook)
 
-(defun sclang-mode ()
+;; (defun sclang-mode ()
+;;   "Major mode for editing SuperCollider language code.
+;; \\{sclang-mode-map}
+;; "
+;;   (interactive)
+;;   (kill-all-local-variables)
+;;   (set-syntax-table sclang-mode-syntax-table)
+;;   (use-local-map sclang-mode-map)
+;;   (setq mode-name "SCLang")
+;;   (setq major-mode 'sclang-mode)
+;;   (sclang-mode-set-local-variables)
+;;   (sclang-set-font-lock-keywords)
+;;   (sclang-init-document)
+;;   (sclang-make-document)
+;;   (run-hooks 'sclang-mode-hook))
+
+;; The mode needs to be defined in this way for spacemacs layer bindings
+;; to work correctly. See the above commented out code for reference to
+;; the old definition.
+
+(define-derived-mode sclang-mode fundamental-mode "sclang-mode"
   "Major mode for editing SuperCollider language code.
 \\{sclang-mode-map}
 "
-  (interactive)
-  (kill-all-local-variables)
-  (set-syntax-table sclang-mode-syntax-table)
-  (use-local-map sclang-mode-map)
-  (setq mode-name "SCLang")
-  (setq major-mode 'sclang-mode)
   (sclang-mode-set-local-variables)
   (sclang-set-font-lock-keywords)
   (sclang-init-document)
-  (sclang-make-document)
-  (run-hooks 'sclang-mode-hook))
+  (sclang-make-document))
 
 ;; =====================================================================
 ;; module initialization

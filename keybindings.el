@@ -1,8 +1,0 @@
-;; (define-key sclang-mode-map (kbd "C-v")	'sclang-eval-region-or-line) 
-;; (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "s" 'sclang-eval-line)
-;; (spacemacs/set-leader-keys-for-major-mode 'sclang-mode "s" 'sclang-eval-defun)
-(evil-leader/set-key-for-mode 'sclang-mode "s" 'sclang-eval-line)
-;; (evil-leader/set-key-for-mode 'sclang-mode "ss" 'sclang-eval-defun)
-;; (evil-leader/set-key-for-mode 'sclang-mode "sS" 'sclang-recompile)
-;; (evil-leader/set-key-for-mode 'sclang-mode "sK" 'sclang-kill)
-;; (evil-leader/set-key-for-mode 'sclang-mode "s." 'sclang-server-free-all)
