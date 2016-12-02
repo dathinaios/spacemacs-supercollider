@@ -37,5 +37,9 @@ Q: Can I have the post window always appear using a right split?
 
 A: Add `(sclang-use-post-buffer-right-split)` to your `.spacemacs` file. This one is a bit of a hack so report an issue if something goes wrong.
 
+Q: How do I enable automatic matching for parenthesis etc.?
+
+A: Add `(add-hook 'sclang-mode-hook 'turn-on-smartparens-mode)` to your `.spacemacs` file.
+
 ---
 ######<i>The emacs package for sclang is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
