@@ -696,7 +696,8 @@ Returns the column to indent to."
   (sclang-mode-set-local-variables)
   (sclang-set-font-lock-keywords)
   (sclang-init-document)
-  (sclang-make-document))
+  (sclang-make-document)
+  (run-hooks 'sclang-mode-hook))
 
 ;; =====================================================================
 ;; module initialization
