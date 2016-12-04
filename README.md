@@ -27,7 +27,7 @@ Quick Start:
 
 Q: Why are quarks still active although I have removed them through `Quarks.gui`?
 
-A: See #5. For now the downloaded-quarks directory should be cleaned up manually (i.e delete folders of unused quarks).
+A: See [this issue](github.com/dathinaios/spacemacs-supercollider/issues/6). For now the downloaded-quarks directory should be cleaned up manually (i.e delete folders of unused quarks).
 
 Q: How do I stop the workspace showing up on startup?
 
