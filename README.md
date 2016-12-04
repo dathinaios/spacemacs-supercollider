@@ -25,9 +25,13 @@ Quick Start:
 
 ##FAQ
 
-Q: Why are quarks still active although I have removed them through `Quarks.gui`?
+Q: Why can I not see the quarks that I have enabled from `SuperCollider.app`?
 
-A: See [this issue](github.com/dathinaios/spacemacs-supercollider/issues/6). For now the downloaded-quarks directory should be cleaned up manually (i.e delete folders of unused quarks).
+A: The layer is using a separate config file named `spacemacs_conf.yaml`. The quarks are independant from `SuperCollider.app`. Just run `Quarks.gui` and enable the ones you need.
+
+Q: I accidentally disabled the `sc-emacs` classes from `Quarks.gui` and nothing works. What should I do?
+
+A: You have two options: 1) While on an SC document type `,!`. It will ask if you are sure because reseting the conf file will unlink the installed `Quarks`. You can simply run `Quarks.gui` and re-enable the ones you want. 2) You can manually add the line `- "~/.emacs.d/private/supercollider/sc-emacs"` under `includedPaths:`.
 
 Q: How do I stop the workspace showing up on startup?
 
