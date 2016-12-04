@@ -1,9 +1,5 @@
 includePaths:
-  - /Applications/SuperCollider.app/Contents/Resources/SCClassLibrary
-  - /Library/Application Support/SuperCollider/Extensions
-  - "~/Library/Application Support/SuperCollider/Extensions"
-  - "~/Library/Application Support/SuperCollider/downloaded-quarks"
-  - "~/.emacs.d/private/supercollider/sc"
+    - "~/.emacs.d/private/supercollider/sc-emacs"
 excludePaths:
     []
 postInlineWarnings: false
