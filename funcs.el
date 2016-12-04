@@ -1,3 +1,12 @@
+
+ (defun sclang-create-spacemacs-conf-file ()
+  (defvar spacemacs-config-file
+    "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
+  (defvar dummy-config-file
+    "~/.emacs.d/private/supercollider/dummy_conf.yaml")
+  (unless (file-exists-p spacemacs-config-file)
+    (copy-file dummy-config-file spacemacs-config-file)))
+
 (defun sclang-move-post-buffer-right ()
   (delete-other-windows)
   (split-window-horizontally)

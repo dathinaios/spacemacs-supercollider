@@ -1,5 +1,5 @@
 includePaths:
-    - "~/.emacs.d/private/supercollider/sc-emacs"
+  - "~/.emacs.d/private/supercollider/sc-emacs"
 excludePaths:
     []
 postInlineWarnings: false
