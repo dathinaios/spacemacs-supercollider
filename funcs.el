@@ -1,16 +1,23 @@
 
-(defun sclang-force-reset-spacemacs-conf-file
- (defvar spacemacs-config-file
-   "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
- (defvar dummy-config-file
-   "~/.emacs.d/private/supercollider/dummy_conf.yaml")
- (copy-file dummy-config-file spacemacs-config-file))
+(defun sclang-reset-spacemacs-conf()
+  "Reset the library yaml file to defaults. You will have to reinstall
+  all your Quarks."
+  (interactive)
+  (if (y-or-n-p "You will have to re-install all your quarks. Do it?  ")
+      (progn
+        (defvar dummy-config-file
+          "~/.emacs.d/private/supercollider/dummy_conf.yaml")
+        (defvar spacemacs-config-file
+          "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
+        (delete-file spacemacs-config-file)
+        (copy-file dummy-config-file spacemacs-config-file)
+        )))
 
 (defun sclang-create-spacemacs-conf-file ()
+  (defvar dummy-config-file
+    "~/.emacs.d/private/supercollider/dummy_conf.yaml")
  (defvar spacemacs-config-file
    "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
- (defvar dummy-config-file
-   "~/.emacs.d/private/supercollider/dummy_conf.yaml")
  (unless (file-exists-p spacemacs-config-file)
    (copy-file dummy-config-file spacemacs-config-file)))
 

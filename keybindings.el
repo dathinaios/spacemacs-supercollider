@@ -17,6 +17,8 @@
   "a" 'sclang-show-method-args)
 (spacemacs/set-leader-keys-for-major-mode 'sclang-mode
   "w" 'sclang-switch-to-workspace)
+(spacemacs/set-leader-keys-for-major-mode 'sclang-mode
+  "!" 'sclang-reset-spacemacs-conf)
 
 ;; ==============
 ;;   prefixes
