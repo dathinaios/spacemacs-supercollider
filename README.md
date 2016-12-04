@@ -27,11 +27,11 @@ Quick Start:
 
 Q: Why can I not see the quarks that I have enabled from `SuperCollider.app`?
 
-A: The layer is using a separate config file named `spacemacs_conf.yaml`. The quarks are independant from `SuperCollider.app`. Just run `Quarks.gui` and enable the ones you need.
+A: The layer is using a separate config file named `spacemacs_conf.yaml` at `~/Library/Application Support/SuperCollider`. The quarks are independant from `SuperCollider.app`. Just run `Quarks.gui` and enable the ones you need.
 
 Q: I accidentally disabled the `sc-emacs` classes from `Quarks.gui` and nothing works. What should I do?
 
-A: You have two options: 1) While on an SC document type `,!`. It will ask if you are sure because reseting the conf file will unlink the installed `Quarks`. You can simply run `Quarks.gui` and re-enable the ones you want. 2) You can manually add the line `- "~/.emacs.d/private/supercollider/sc-emacs"` under `includedPaths:`.
+A: You have two options: 1) While on an SC document type `,!`. It will ask if you are sure because reseting the conf file will unlink the installed `Quarks`. You can simply run `Quarks.gui` and re-enable the ones you want. 2) You can manually add the line `- "~/.emacs.d/private/supercollider/sc-emacs"` under `includedPaths:` in `spacemacs_conf.yaml`.
 
 Q: How do I stop the workspace showing up on startup?
 
