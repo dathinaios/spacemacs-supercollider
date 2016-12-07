@@ -33,6 +33,10 @@ Q: I accidentally disabled the `sc-emacs` classes from `Quarks.gui` and nothing 
 
 A: You have two options: 1) While on an SC document type `,!`. It will ask if you are sure because reseting the conf file will unlink the installed `Quarks`. You can simply run `Quarks.gui` and re-enable the ones you want. 2) You can manually add the line `- "~/.emacs.d/private/supercollider/sc-emacs"` under `includedPaths:` in `spacemacs_conf.yaml`.
 
+Q: The mode is forcing 4 spaces indent. How do I change it to 2?
+
+A: Add `(setq sclang-indent-level 2)` to your `.spacemacs` file.
+
 Q: How do I stop the workspace showing up on startup?
 
 A: Add `(setq sclang-show-workspace-on-startup nil)` to your `.spacemacs` file.
