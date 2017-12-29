@@ -23,7 +23,7 @@ Quick Start:
 * `,ss` to start the server.
 * `,,` to evaluate line or selection.
 
-##FAQ
+## FAQ
 
 Q: Why can I not see the quarks that I have enabled from `SuperCollider.app`?
 
@@ -54,4 +54,4 @@ Q: How do I enable automatic matching for parenthesis etc.?
 A: Add `(add-hook 'sclang-mode-hook 'turn-on-smartparens-mode)` to your `.spacemacs` file.
 
 ---
-######<i>The emacs package for sclang is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
+###### <i>The emacs package for sclang is modified from [Stefan Kersten's implementation as distributed with SuperCollider](https://github.com/supercollider/supercollider/tree/master/editors/scel).</i>
