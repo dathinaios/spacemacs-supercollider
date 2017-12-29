@@ -287,7 +287,7 @@ If EOB-P is non-nil, positions cursor at end of buffer."
 (defun sclang-make-options ()
   (let ((default-directory "")
 	(res ()))
-    (flet ((append-option
+    (cl-flet ((append-option
 	    (option &optional value)
 	    (setq res (append res (list option) (and value (list value))))))
       (if (file-directory-p sclang-runtime-directory)

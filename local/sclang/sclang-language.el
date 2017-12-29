@@ -245,7 +245,7 @@ low-resource systems."
 
 (defun sclang-read-symbol (prompt &optional default predicate require-match inherit-input-method)
   (if sclang-use-symbol-table
-      (flet ((make-minibuffer-local-map
+      (cl-flet ((make-minibuffer-local-map
 	      (parent-keymap)
 	      (let ((map (make-sparse-keymap)))
 		(set-keymap-parent map parent-keymap)
@@ -746,7 +746,7 @@ current-directory, iff `sclang-source-directoy' is nil."
 Looks for all repetitive patterns in ITEMS recursively.  Therefore, it is
 computationally expensive, especially when ITEMS is a long list.  If you don't
 want smart pattern guessing, use `sclang-format' directly to format your Pseq."
-  (flet ((find-reps (items)
+  (cl-flet ((find-reps (items)
 	   (let (r)
 	     (while items
 	       (let ((ret (car items))
