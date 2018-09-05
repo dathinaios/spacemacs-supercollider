@@ -14,6 +14,8 @@
 (spacemacs/set-leader-keys-for-major-mode 'sclang-mode
   "," 'sclang-eval-region-or-line)
 (spacemacs/set-leader-keys-for-major-mode 'sclang-mode
+  "m" 'sclang-evaluate-within-parens)
+(spacemacs/set-leader-keys-for-major-mode 'sclang-mode
   "a" 'sclang-show-method-args)
 (spacemacs/set-leader-keys-for-major-mode 'sclang-mode
   "w" 'sclang-switch-to-workspace)

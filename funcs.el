@@ -16,10 +16,10 @@
 (defun sclang-create-spacemacs-conf-file ()
   (defvar dummy-config-file
     "~/.emacs.d/private/supercollider/dummy_conf.yaml")
- (defvar spacemacs-config-file
-   "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
- (unless (file-exists-p spacemacs-config-file)
-   (copy-file dummy-config-file spacemacs-config-file)))
+  (defvar spacemacs-config-file
+    "~/Library/Application Support/SuperCollider/spacemacs_conf.yaml")
+  (unless (file-exists-p spacemacs-config-file)
+    (copy-file dummy-config-file spacemacs-config-file)))
 
 (defun sclang-move-post-buffer-right ()
   (delete-other-windows)
@@ -47,3 +47,9 @@
     "RET" 'sclang-start-right)
   (spacemacs/set-leader-keys-for-major-mode 'sclang-mode
     ">" 'sclang-show-post-buffer-right))
+
+(defun sclang-evaluate-within-parens ()
+  "Evaluate code within outermost parentheses (assumes active evil mode)"
+  (interactive)
+  (setq unread-command-events (listify-key-sequence "vi(,,fd")))
+
