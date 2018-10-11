@@ -1,7 +1,7 @@
 SuperCollider Spacemacs Layer
 =============================
 
-[SuperCollider 3.8](http://supercollider.github.io/download.html) layer for [Spacemacs](http://spacemacs.org/).
+[SuperCollider](http://supercollider.github.io/download.html) layer for [Spacemacs](http://spacemacs.org/).
 
 # Installation
 
@@ -24,6 +24,10 @@ Quick Start:
 * `,,` to evaluate line or selection.
 
 ## FAQ
+
+Q: `,m` does not execute code within parenthesis?
+
+A: There seems to be an issue with loading the relevant function. See [issue #10](https://github.com/dathinaios/spacemacs-supercollider/issues/10) for a temporary workaround.
 
 Q: Why can I not see the quarks that I have enabled from `SuperCollider.app`?
 
