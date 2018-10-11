@@ -25,7 +25,7 @@ Quick Start:
 
 ## FAQ
 
-Q: `,m` does not execute code within parenthesis?
+Q: Why is `,m` not evaluating code within parenthesis?
 
 A: There seems to be an issue with loading the relevant function. See [issue #10](https://github.com/dathinaios/spacemacs-supercollider/issues/10) for a temporary workaround.
 
