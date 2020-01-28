@@ -51,5 +51,5 @@
 (defun sclang-evaluate-within-parens ()
   "Evaluate code within outermost parentheses (assumes active evil mode)"
   (interactive)
-  (setq unread-command-events (listify-key-sequence "vi(,,fd")))
+  (setq unread-command-events (listify-key-sequence "mz(v),,v`z")))
 
