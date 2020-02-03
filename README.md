@@ -25,10 +25,6 @@ Quick Start:
 
 ## FAQ
 
-Q: Why is `,m` not evaluating code within parenthesis?
-
-A: There seems to be an issue with loading the relevant function. See [issue #10](https://github.com/dathinaios/spacemacs-supercollider/issues/10) for a temporary workaround.
-
 Q: Why can I not see the quarks that I have enabled from `SuperCollider.app`?
 
 A: The layer is using a separate config file named `spacemacs_conf.yaml` at `~/Library/Application Support/SuperCollider`. The quarks are independant from `SuperCollider.app`. Just run `Quarks.gui` and enable the ones you need.
