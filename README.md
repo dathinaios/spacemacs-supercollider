@@ -1,6 +1,10 @@
 SuperCollider Spacemacs Layer
 =============================
 
+❗ | I have returned to Vim - 😬 - so I will not be updating this project. If you are aware of a good fork or a different repo let me know to redirect to it from here for visibility.
+-- | --
+
+
 [SuperCollider](http://supercollider.github.io/download.html) layer for [Spacemacs](http://spacemacs.org/).
 
 # Installation
